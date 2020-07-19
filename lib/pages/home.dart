@@ -3,6 +3,7 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:xithub/widgets/tab_bar_and_tab_view.dart';
 
 class HomePage extends StatefulWidget {
+  static final String sName = "/";
   @override
   _HomePageState createState() => _HomePageState();
 }

@@ -1,15 +1,14 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:xithub/pages/home.dart';
+import 'package:xithub/app.dart';
 
 void main() {
-  runApp(App());
-}
-
-class App extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: HomePage(),
+  runZoned(() {
+    runApp(
+      FlutterReduxApp(),
     );
-  }
+  }, onError: (Object obj, StackTrace stack) {
+    print(obj);
+    print(stack);
+  });
 }
