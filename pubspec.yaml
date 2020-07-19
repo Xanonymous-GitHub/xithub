@@ -1,0 +1,36 @@
+name: xithub
+description: A GitHub mobile app
+publish_to: 'none'
+version: 1.0.0+1
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
+  auto_size_text: ^2.1.0
+  cupertino_icons: ^0.1.3
+  flutter_spinkit: ^4.1.2+1
+  dio: ^3.0.9
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+#  assets:
+  fonts:
+    - family: PaytoneOne-Regular
+      fonts:
+        - asset: static/fonts/PaytoneOne-Regular.ttf
+    - family: ProductSans-Black
+      fonts:
+        - asset: static/fonts/ProductSans-Black.ttf
+    - family: ProductSans-Medium
+      fonts:
+        - asset: static/fonts/ProductSans-Medium.ttf
+    - family: ProductSans-Regular
+      fonts:
+        - asset: static/fonts/ProductSans-Regular.ttf
+    - family: ProductSans-Thin
+      fonts:
+        - asset: static/fonts/ProductSans-Thin.ttf
